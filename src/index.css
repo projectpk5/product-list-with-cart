@@ -1,0 +1,5 @@
+.card-img-overlay {
+    position: relative;
+    bottom: -50%;
+    transform: translateY(-50%);
+}
