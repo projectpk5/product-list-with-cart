@@ -1,5 +1,8 @@
 import React, {useReducer} from 'react'
-
+import AddToCartIcon from '/images/icon-add-to-cart.svg'
+import EmptyCart from '/images/illustration-empty-cart.svg'
+import CarbonNeutralIcon from '/images/icon-carbon-neutral.svg'
+import OrderConfirmed from '/images/icon-order-confirmed.svg'
 import { useContext, useState } from 'react'
 import { myCartContext } from './Context/CartContext'
 const ListCart = () => {
@@ -39,7 +42,7 @@ const ListCart = () => {
                                         :
                                         (
                                             <span className='btn btn-outline-danger border border-0 rounded-pill'>
-                                                <span className='text-danger'><img src="src/assets/images/icon-add-to-cart.svg"/>Add to Cart</span>
+                                                <span className='text-danger'><img src={AddToCartIcon}/>Add to Cart</span>
                                             </span>
                                         ) 
                                         }
@@ -77,7 +80,7 @@ const ListCart = () => {
                     ) : 
                     (
                         <div className="container">
-                            <img src="src/assets/images/illustration-empty-cart.svg" alt="" />
+                            <img src={EmptyCart} alt="" />
                             <p>No items in your cart</p>
                         </div>
                     )
@@ -85,7 +88,7 @@ const ListCart = () => {
 
                     <div className="container w-50 rounded text-dark m-2 p-2" style={{backgroundColor: 'hsl(20, 50%, 98%)'}}>
                         <span>
-                            <img src="src/assets/images/icon-carbon-neutral.svg" alt="" />
+                            <img src={CarbonNeutralIcon} alt="" />
                             This is a carbon neutral delivery
                         </span>
                         
@@ -100,7 +103,7 @@ const ListCart = () => {
             <div className="modal-content">
                 <div className="modal-header">
                     <div className="modal-title">
-                    <img src="src/assets/images/icon-order-confirmed.svg" alt="" /><br />
+                    <img src={OrderConfirmed} alt="" /><br />
                     <h2>Order Confirmed</h2>
                     <p>We hope you enjoy your food</p>
                     </div>
