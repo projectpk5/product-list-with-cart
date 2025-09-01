@@ -1,0 +1,10 @@
+.btn-outline-danger:hover {
+    background-color: #fff; /* Same as default .btn-primary background */
+    color: #fff; /* Same as default .btn-primary text color */
+    border-color: #dc3545;
+}
+
+.myCustomBtn {
+    position: relative;
+    top: -1.3rem;
+}
